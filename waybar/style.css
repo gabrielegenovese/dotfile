@@ -1,10 +1,10 @@
 #waybar {
 	font-family: CaskaydiaCove Nerd Font;
-    font-size: 13px;
+  font-size: 14px;
 }
 
 #window {
-    padding: 0 10px;
+    padding: 0 9px;
 }
 
 window#waybar {
@@ -18,15 +18,15 @@ window#waybar {
 } 
 
 #workspaces {
-    margin: 0 5px;
+    margin: 0 4px;
 }
 
 #workspaces button {
     padding: 0 8px;
     color: #565f89;
-    border: 3px solid rgba(9, 85, 225, 0);
+    border: 2px solid rgba(9, 85, 225, 0);
     border-radius: 10px;
-    min-width: 33px;
+    min-width: 30px;
 }
 
 #workspaces button.visible {
