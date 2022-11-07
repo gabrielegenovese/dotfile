@@ -1,5 +1,4 @@
 # devices
-
 input * {
       dwt enabled
       tap enabled
@@ -14,14 +13,12 @@ input * {
 }
 
 # constants
-
 set $menu wofi --show drun 
 set $browser firefox 
 set $terminal foot
 set $screenshot grim -g "$(slurp)" - | swappy -f -
 
 # shortcuts
-
 set $mod Mod4
 
 bindsym $mod+Up focus up
@@ -81,8 +78,8 @@ bindsym $mod+Ctrl+0 [workspace="10"] move workspace to output current
 bindsym $mod+b splith
 bindsym $mod+v splitv
 bindsym $mod+f fullscreen
-bindsym $mod+Shift+space floating toggle
-#bindsym $mod+space focus mode_toggle
+bindsym $mod+space floating toggle
+#bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+a focus parent
 bindsym $mod+r mode "resize"
 
@@ -115,7 +112,6 @@ bindsym $mod+p exec wlogout -p layer-shell
 floating_modifier $mod normal
 
 # design
-
 font pango:CaskaydiaCove Nerd Font 15
 
 client.focused          #2F2F2F #556064 #80FFF9 #1F1F1F
@@ -149,7 +145,6 @@ for_window [app_id="imv"] floating enable
 for_window [app_id="pamac-manager"] floating enable
 
 # auto launch applications
-
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec mako
 exec waybar
@@ -165,5 +160,4 @@ for_window [class="."] inhibit_idle fullscreen
 for_window [app_id="."] inhibit_idle fullscreen
 
 # xorg setup
-
 include /etc/sway/config.d/*

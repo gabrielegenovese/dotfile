@@ -154,3 +154,4 @@ alias u="sudo pacman -R"
 alias update="yay -Syu"
 alias swayconf="vi ~/.config/sway/config"
 alias zshconf="vi ~/.zshrc"
+
