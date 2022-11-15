@@ -5,9 +5,6 @@ export SAVEHIST=10000
 # enable autosuggestions
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-else
-    # for FreeBSD currently
-    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 # make midnight commander colorful
 export TERM=xterm-256color

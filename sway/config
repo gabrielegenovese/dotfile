@@ -12,6 +12,10 @@ input * {
       xkb_options "grp:alt_space_toggle"
 }
 
+input "type:touchpad" {
+  pointer_accel 0 
+}
+
 # constants
 set $menu wofi --show drun 
 set $browser firefox 
@@ -79,7 +83,6 @@ bindsym $mod+b splith
 bindsym $mod+v splitv
 bindsym $mod+f fullscreen
 bindsym $mod+space floating toggle
-#bindsym $mod+Shift+space focus mode_toggle
 bindsym $mod+a focus parent
 bindsym $mod+r mode "resize"
 
@@ -106,7 +109,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && pamixer --get-volume > /tmp/wob
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && pamixer --get-volume > /tmp/wob
 
-bindsym $mod+Print exec $screenshot
+bindsym Print exec $screenshot
 bindsym $mod+p exec wlogout -p layer-shell
 
 floating_modifier $mod normal
@@ -156,6 +159,7 @@ exec swayidle -w \
 exec rm -f /tmp/wob && mkfifo /tmp/wob && tail -f /tmp/wob | wob
 exec rm -f /tmp/sov && mkfifo /tmp/sov && tail -f /tmp/sov | sov
 
+# disable swaylock when fullscreen
 for_window [class="."] inhibit_idle fullscreen
 for_window [app_id="."] inhibit_idle fullscreen
 
