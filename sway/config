@@ -2,7 +2,6 @@
 input * {
       dwt enabled
       tap enabled
-      natural_scroll enabled
       middle_emulation enabled
       repeat_rate 100
       repeat_delay 250
@@ -115,7 +114,7 @@ bindsym $mod+p exec wlogout -p layer-shell
 floating_modifier $mod normal
 
 # design
-font pango:CaskaydiaCove Nerd Font 15
+font pango:CaskaydiaCove Nerd Font 18
 
 client.focused          #2F2F2F #556064 #80FFF9 #1F1F1F
 client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
