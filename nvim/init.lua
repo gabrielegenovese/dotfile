@@ -3,6 +3,7 @@ require 'visimp' {
     -- 'ampl',
     -- 'bash',
     'c',
+    'rust',
     -- 'csharp',
     -- 'css',
     -- 'dart',
