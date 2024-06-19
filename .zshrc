@@ -1,5 +1,8 @@
 # needed for history and autosuggestions
 export HISTFILE=~/.zhistory
+export _JAVA_AWT_WM_NONREPARENTING=1
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 export HISTSIZE=10000
 export SAVEHIST=10000
 # enable autosuggestions
@@ -43,6 +46,7 @@ fi
 
 ZSH_THEME="m3-round"
 export ZSH="$HOME/.oh-my-zsh"
+export JOLIE_HOME="/usr/lib/jolie"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -152,3 +156,12 @@ alias update="yay -Syu"
 alias swayconf="vi ~/.config/sway/config"
 alias zshconf="vi ~/.zshrc"
 alias adj-sens="sway input 'type:touchpad' pointer_accel"
+alias gp="find ~ -name \".git\" -type d -exec bash -c \"echo '{}' && cd '{}'/.. && git pull\" \\;"
+
+# pnpm
+export PNPM_HOME="/home/geno/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

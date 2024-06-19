@@ -56,7 +56,7 @@
     "tooltip": false
   },
   "cpu": {
-    "interval": 5,
+    "interval": 10,
     "format": "︁ {}%",
     "max-length": 10
   },

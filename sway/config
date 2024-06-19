@@ -1,6 +1,6 @@
 # devices
 input * {
-      dwt enabled
+      dwt disabled
       tap enabled
       middle_emulation enabled
       repeat_rate 100
@@ -151,8 +151,8 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec mako
 exec waybar
 exec swayidle -w \
-         timeout 300 'swaylock -f' \
-         timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         timeout 600 'swaylock -f' \
+         timeout 700 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f'
 
 exec rm -f /tmp/wob && mkfifo /tmp/wob && tail -f /tmp/wob | wob
@@ -164,3 +164,7 @@ for_window [app_id="."] inhibit_idle fullscreen
 
 # xorg setup
 include /etc/sway/config.d/*
+
+
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
