@@ -121,7 +121,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -157,6 +157,7 @@ alias swayconf="vi ~/.config/sway/config"
 alias zshconf="vi ~/.zshrc"
 alias adj-sens="sway input 'type:touchpad' pointer_accel"
 alias gp="find ~ -name \".git\" -type d -exec bash -c \"echo '{}' && cd '{}'/.. && git pull\" \\;"
+alias paclear="sudo pacman -Rns $(pacman -Qtdq)"
 
 # pnpm
 export PNPM_HOME="/home/geno/.local/share/pnpm"
