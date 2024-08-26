@@ -157,7 +157,7 @@ alias swayconf="vi ~/.config/sway/config"
 alias zshconf="vi ~/.zshrc"
 alias adj-sens="sway input 'type:touchpad' pointer_accel"
 alias gp="find ~ -name \".git\" -type d -exec bash -c \"echo '{}' && cd '{}'/.. && git pull\" \\;"
-alias paclear="sudo pacman -Rns $(pacman -Qtdq)"
+alias paclear='sudo pacman -Rns $(pacman -Qtdq)'
 
 # pnpm
 export PNPM_HOME="/home/geno/.local/share/pnpm"
