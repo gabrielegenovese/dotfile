@@ -1,5 +1,5 @@
 cd ~/.config
-cp -r mako wlogout waybar foot sway swaylock wofi ~/Desktop/github-proj/dotfile
+cp -r nvim mako wlogout waybar foot sway swaylock wofi ~/Desktop/github-proj/dotfile
 cd
 cp -r script .zshrc ~/Desktop/github-proj/dotfile
 cd ~/Desktop/github-proj/dotfile
