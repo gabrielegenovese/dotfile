@@ -15,7 +15,7 @@ require 'visimp' {
     'html',
     -- 'idris',
     'java',
-    'javascript',
+    -- 'javascript',
     'json',
     'latex',
     -- 'lean',
