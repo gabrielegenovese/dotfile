@@ -1,4 +1,5 @@
 # needed for history and autosuggestions
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=true
 export HISTFILE=~/.zhistory
 export _JAVA_AWT_WM_NONREPARENTING=1
 export GOPATH="$HOME/go"
@@ -46,7 +47,6 @@ fi
 
 ZSH_THEME="m3-round"
 export ZSH="$HOME/.oh-my-zsh"
-export JOLIE_HOME="/usr/lib/jolie"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -151,7 +151,7 @@ alias c="clear"
 alias mouse='sudo modprobe -r psmouse && sudo modprobe psmouse'
 alias vi="nvim"
 alias i="sudo pacman -S"
-alias u="sudo pacman -R"
+alias u="sudo pacman -Rns"
 alias update="yay -Syu"
 alias swayconf="vi ~/.config/sway/config"
 alias zshconf="vi ~/.zshrc"
@@ -175,3 +175,19 @@ esac
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/geno/.opam/opam-init/init.zsh' ]] || source '/home/geno/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
