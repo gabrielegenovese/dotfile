@@ -160,6 +160,11 @@ alias gp="find ~ -name \".git\" -type d -exec bash -c \"echo '{}' && cd '{}'/.. 
 alias paclear='sudo pacman -Rns $(pacman -Qtdq)'
 alias n="nmtui"
 alias ff="fastfetch"
+alias tsu="sudo tailscale up"
+alias tsd="sudo tailscale down"
+alias wgu="wg-quick up wg0"
+alias wgd="wg-quick down wg0"
+alias k="kubectl"
 
 # pnpm
 export PNPM_HOME="/home/geno/.local/share/pnpm"
