@@ -15,6 +15,12 @@ input "type:touchpad" {
   pointer_accel 0 
 }
 
+output {
+  * bg ~/Pictures/background.png stretch
+  # work screen scaling
+  HDMI-A-1 scale 1.75
+}
+
 # constants
 set $menu wofi --show drun 
 set $browser firefox 
@@ -123,7 +129,6 @@ client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
 client.placeholder      #000000 #0c0c0c #ffffff #000000 
 client.background       #2B2C2B
 
-output * bg ~/Pictures/background.png stretch
 
 default_border none
 default_floating_border normal
