@@ -3,6 +3,7 @@ input * {
       dwt disabled
       tap enabled
       middle_emulation enabled
+      drag_lock disabled
       repeat_rate 100
       repeat_delay 250
       # uncomment below to add other input sources
@@ -15,11 +16,9 @@ input "type:touchpad" {
   pointer_accel 0 
 }
 
-output {
-  * bg ~/Pictures/background.png stretch
-  # work screen scaling
-  HDMI-A-1 scale 1.75
-}
+output * bg ~/Pictures/background.png stretch
+# work screen scaling
+#output HDMI-A-1 scale 1.75
 
 # constants
 set $menu wofi --show drun 
