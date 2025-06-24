@@ -18,7 +18,7 @@ input "type:touchpad" {
 
 output * bg ~/Pictures/background.png stretch
 # work screen scaling
-#output HDMI-A-1 scale 1.75
+output HDMI-A-1 scale 1.75
 
 # constants
 set $menu wofi --show drun 
