@@ -1,4 +1,21 @@
+vim.g.python3_host_prog = '/usr/bin/python3'
 require 'visimp' {
+
+  rocq = {
+    coqtail = {
+      indent_on_dot = 1 -- do not use the coqtail_ prefixes
+    },
+    binds = {
+      [{
+        mode = 'n',
+        bind = '<leader>l',
+        opts = {
+          desc = 'Rocq: check up to current line',
+        },
+      }] = function() vim.cmd 'CoqToLine' end,
+    },
+  },
+
   languages = {
     -- 'agda',
     -- 'ampl',
@@ -29,7 +46,8 @@ require 'visimp' {
     -- 'svelte',
     -- 'swift',
     -- 'toml',
-    'typst'
+    'typst',
+    'rocq'
     -- 'vue'
   },
 

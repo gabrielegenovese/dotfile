@@ -114,6 +114,7 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% && pa
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% && pamixer --get-volume > /tmp/wob
 
 bindsym Print exec $screenshot
+bindsym $mod+Shift+s exec $screenshot
 bindsym $mod+p exec wlogout -p layer-shell
 
 floating_modifier $mod normal
