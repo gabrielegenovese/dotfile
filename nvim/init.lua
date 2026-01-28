@@ -17,7 +17,7 @@ require 'visimp' {
   },
 
   languages = {
-    -- 'agda',
+    'agda',
     -- 'ampl',
     -- 'bash',
     -- 'c',

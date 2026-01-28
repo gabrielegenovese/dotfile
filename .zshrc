@@ -3,7 +3,7 @@ export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=true
 export HISTFILE=~/.zhistory
 export _JAVA_AWT_WM_NONREPARENTING=1
 export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
+export PATH="/opt/cisco/anyconnect/bin:$GOPATH/bin:$PATH"
 export HISTSIZE=10000
 export SAVEHIST=10000
 # enable autosuggestions
