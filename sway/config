@@ -138,6 +138,7 @@ gaps outer 0
 gaps top -5
 
 for_window [app_id="foot"] border pixel 1
+for_window [app_id="wofi"] border pixel 1
 for_window [app_id="iwgtk"] floating enable
 for_window [app_id="blueman-manager"] floating enable
 for_window [app_id="blueman-manager"] resize set 1000 600
